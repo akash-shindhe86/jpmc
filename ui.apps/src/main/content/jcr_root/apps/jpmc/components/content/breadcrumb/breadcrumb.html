@@ -1,0 +1,10 @@
+<h1>BREADCRUMB </h2>
+<div style="width:500px;height:300px">
+<sly data-sly-use.cpt="breadCrumb.js">
+ <div data-sly-list="${cpt.pageStack}"> 
+     <sly data-sly-test="${!item.hidInNav}">
+   <span> <a href ="${item.path}.html">${item.title}</a>/</span>
+	</sly>
+  </div> 
+</sly>
+</div>
